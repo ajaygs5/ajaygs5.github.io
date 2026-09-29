@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Metadata -->
+  <title>Ajay Kumar | BCA Student at SRM IST &amp; Software Developer Portfolio</title>
+  <meta
+    name="description"
+    content="Personal developer portfolio of Ajay Kumar, a BCA Computer Applications student at SRM Institute of Science and Technology, Chennai. Passionate about C, C++, Python, Java, Swift, and modern web development (HTML, CSS, JavaScript, TypeScript)."
+  />
+  <meta name="author" content="Ajay Kumar" />
+  <meta name="theme-color" content="#060913" />
+
+  <!-- Open Graph / Social Sharing Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ajay Kumar | Developer Portfolio" />
+  <meta
+    property="og:description"
+    content="BCA Computer Applications student at SRM Institute of Science and Technology, Chennai &amp; aspiring software developer."
+  />
+  <meta property="og:image" content="assets/favicon.svg" />
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ajay Kumar | Developer Portfolio" />
+  <meta
+    name="twitter:description"
+    content="BCA Computer Applications student at SRM IST, Chennai &amp; aspiring software developer."
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts (Inter, Space Grotesk, JetBrains Mono) with system font fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700;800&amp;display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <!-- Keyboard Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Subtle Animated Developer Background (HTML5 Canvas + Ambient Radial Glow) -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       STICKY NAVIGATION HEADER
+       ======================================================================== -->
+  <header id="site-header" class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Ajay Kumar Home">
+        <span class="brand-monogram" aria-hidden="true">AK</span>
+        <span class="brand-name">Ajay <span>Kumar</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Right CTA -->
+      <div class="nav-actions">
+        <a
+          href="assets/Ajay_Kumar_Resume_Placeholder.pdf"
+          data-config-href="resumePath"
+          download="Ajay_Kumar_Resume.pdf"
+          class="btn btn-secondary btn-sm"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Resume
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button
+        id="mobile-menu-btn"
+        class="mobile-menu-btn"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav-drawer"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      id="mobile-nav-drawer"
+      class="mobile-nav-drawer"
+      aria-label="Mobile Navigation"
+      aria-hidden="true"
+    >
+      <a href="#about" class="nav-link">About Me</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#experience" class="nav-link">Experience &amp; Achievements</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#resume" class="nav-link">Resume</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ========================================================================
+       MAIN PAGE CONTENT
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ======================================================================
+         1. HERO SECTION
+         ====================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Left Column: Introduction & Actions -->
+        <div>
+          <div class="hero-status-pill hero-animate-1">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>BCA Student @ SRM IST, Chennai &bull; Class of 2029</span>
+          </div>
+
+          <p class="hero-greeting hero-animate-1">&gt; Hello, world! I am</p>
+
+          <h1 class="hero-title hero-animate-2">
+            <span class="text-gradient">Ajay Kumar</span>
+          </h1>
+
+          <p class="hero-subtitle hero-animate-2">
+            BCA Computer Applications Student &amp; Aspiring Software Developer
+          </p>
+
+          <p class="hero-description hero-animate-3">
+            Studying Computer Applications at <strong>SRM Institute of Science and Technology</strong> in Chennai.
+            Focused on building strong software fundamentals across
+            <strong>C, C++, Python, Java, and Swift</strong>, and crafting modern, responsive web applications with
+            <strong>HTML, CSS, JavaScript, and TypeScript</strong>.
+          </p>
+
+          <!-- Primary Call-to-Action Buttons -->
+          <div class="hero-cta-group hero-animate-3">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+
+            <a
+              href="assets/Ajay_Kumar_Resume_Placeholder.pdf"
+              data-config-href="resumePath"
+              download="Ajay_Kumar_Resume.pdf"
+              class="btn btn-ghost"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Social Links Bar -->
+          <div class="hero-social-bar hero-animate-4">
+            <span class="hero-social-label">Connect:</span>
+
+            <a
+              href="https://github.com/ajaygs5"
+              data-config-href="githubUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-pill"
+              aria-label="Ajay Kumar on GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z" />
+              </svg>
+              <span>github.com/ajaygs5</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/ajaykumar-g-70822825b"
+              data-config-href="linkedinUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-pill"
+              aria-label="Ajay Kumar on LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a
+              href="mailto:gsajaykumar555@gmail.com"
+              data-config-href="email"
+              class="social-pill"
+              aria-label="Email Ajay Kumar"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Developer Code Terminal Card -->
+        <div class="terminal-window hero-animate-5" aria-label="Developer profile code snippet">
+          <div class="terminal-header">
+            <div class="terminal-dots" aria-hidden="true">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+            </div>
+            <span class="terminal-title">ajay_kumar.profile.ts</span>
+          </div>
+          <div class="terminal-body">
+            <span class="code-line"><span class="code-comment">// Verified Developer Profile</span></span>
+            <span class="code-line"><span class="code-kw">const</span> <span class="code-var">developer</span> = {</span>
+            <span class="code-line">&nbsp;&nbsp;<span class="code-prop">name</span>: <span class="code-str">"Ajay Kumar"</span>,</span>
+            <span class="code-line">&nbsp;&nbsp;<span class="code-prop">degree</span>: <span class="code-str">"BCA – Computer Applications"</span>,</span>
+            <span class="code-line">&nbsp;&nbsp;<span class="code-prop">college</span>: <span class="code-str">"SRM IST, Chennai"</span>,</span>
+            <span class="code-line">&nbsp;&nbsp;<span class="code-prop">graduation</span>: <span class="code-var">2029</span>,</span>
+            <span class="code-line">&nbsp;&nbsp;<span class="code-prop">languages</span>: [</span>
+            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"C"</span>, <span class="code-str">"C++"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"Java"</span>,</span>
+            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"Swift"</span>, <span class="code-str">"JavaScript"</span>, <span class="code-str">"TypeScript"</span></span>
+            <span class="code-line">&nbsp;&nbsp;],</span>
+            <span class="code-line">&nbsp;&nbsp;<span class="code-prop">webStack</span>: [</span>
+            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"HTML"</span>, <span class="code-str">"CSS"</span>, <span class="code-str">"JavaScript"</span>, <span class="code-str">"TypeScript"</span></span>
+            <span class="code-line">&nbsp;&nbsp;]</span>
+            <span class="code-line">};</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. ABOUT ME SECTION
+         ====================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">01 // About Me</span>
+          <h2 class="section-title">Building Strong Foundations in <span class="text-gradient">Software &amp; Web</span></h2>
+          <p class="section-subtitle">
+            An honest overview of my academic journey at SRM IST, technical curiosity, and approach to learning software development.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Card -->
+          <div class="glass-card about-card reveal">
+            <p>
+              Hello! I am <strong>Ajay Kumar</strong>, an undergraduate student pursuing a
+              <strong>Bachelor of Computer Applications (BCA – Computer Applications)</strong> at
+              <strong>SRM Institute of Science and Technology</strong> in Chennai, Tamil Nadu.
+            </p>
+            <p>
+              My interest in software development started with understanding how programs work from the ground up—writing structured and object-oriented code in <strong>C, C++, and Java</strong>, exploring backend logic and automation with <strong>Python</strong>, and learning modern application development with <strong>Swift</strong>.
+            </p>
+            <p>
+              On the web side, I enjoy designing and building clean, responsive user interfaces with <strong>HTML, CSS, JavaScript, and TypeScript</strong>. As a student developer, I prioritize readable code, strong fundamentals, and continuous learning through practical projects.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Core Programming</h3>
+                  <p>Structured, OOP, and type-safe coding across C, C++, Java, Python &amp; Swift.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Web Development</h3>
+                  <p>Responsive, semantic interfaces built with HTML, CSS, JavaScript &amp; TypeScript.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Profile Details Card -->
+          <aside class="glass-card profile-summary-card reveal delay-1" aria-label="Quick Profile Details">
+            <div class="profile-fact-list">
+              <div class="profile-fact">
+                <span class="fact-label">Full Name</span>
+                <span class="fact-value">Ajay Kumar</span>
+              </div>
+
+              <div class="profile-fact">
+                <span class="fact-label">Degree Program</span>
+                <span class="fact-value">BCA – Computer Applications</span>
+              </div>
+
+              <div class="profile-fact">
+                <span class="fact-label">College / University</span>
+                <span class="fact-value">
+                  <span data-config-text="college">SRM Institute of Science and Technology</span>
+                </span>
+              </div>
+
+              <div class="profile-fact">
+                <span class="fact-label">Expected Graduation</span>
+                <span class="fact-value">
+                  <span data-config-text="graduationYear">2029</span>
+                  <span class="verified-tag">Class of 2029</span>
+                </span>
+              </div>
+
+              <div class="profile-fact">
+                <span class="fact-label">Location</span>
+                <span class="fact-value" data-config-text="location">Chennai, Tamil Nadu</span>
+              </div>
+
+              <div class="profile-fact">
+                <span class="fact-label">Email</span>
+                <span class="fact-value">
+                  <a href="mailto:gsajaykumar555@gmail.com" data-config-href="email" data-config-text="emailDisplay">
+                    gsajaykumar555@gmail.com
+                  </a>
+                </span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. SKILLS SECTION
+         ====================================================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">02 // Technical Toolkit</span>
+          <h2 class="section-title">Languages &amp; <span class="text-gradient">Web Technologies</span></h2>
+          <p class="section-subtitle">
+            Technologies I actively study and use to build programs and web interfaces. Filter by category below.
+          </p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="skills-filter-bar reveal" role="group" aria-label="Filter skills by category">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">
+            All Technologies (9)
+          </button>
+          <button type="button" class="filter-btn" data-filter="programming" aria-pressed="false">
+            Programming Languages (7)
+          </button>
+          <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">
+            Web Technologies (4)
+          </button>
+        </div>
+
+        <!-- Animated Skill Cards Grid (No exaggerated proficiency bars) -->
+        <div class="skills-grid">
+          <!-- 1. C -->
+          <article class="glass-card skill-card reveal" data-categories="programming">
+            <div class="skill-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" stroke="#38bdf8" stroke-width="1.75" fill="rgba(56,189,248,0.1)" />
+                <path d="M14.8 9.5a3.5 3.5 0 1 0 0 5" stroke="#f8fafc" stroke-width="2.2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>C</h3>
+              <span class="skill-category-tag">Programming Language</span>
+            </div>
+          </article>
+
+          <!-- 2. C++ -->
+          <article class="glass-card skill-card reveal delay-1" data-categories="programming">
+            <div class="skill-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" stroke="#60a5fa" stroke-width="1.75" fill="rgba(96,165,250,0.1)" />
+                <path d="M11.5 9.5a3 3 0 1 0 0 5" stroke="#f8fafc" stroke-width="2" stroke-linecap="round" />
+                <path d="M14.5 11v2M13.5 12h2M18 11v2M17 12h2" stroke="#38bdf8" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>C++</h3>
+              <span class="skill-category-tag">Programming Language</span>
+            </div>
+          </article>
+
+          <!-- 3. Python -->
+          <article class="glass-card skill-card reveal delay-2" data-categories="programming">
+            <div class="skill-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3c-4 0-3.7 1.7-3.7 1.7V7h3.8v.6H6.5S3 7.3 3 11.8c0 4.5 3 4.3 3 4.3h1.8v-2.1s-.1-2.5 2.4-2.5h4.2s2.3 0 2.3-2.2V5.4S17.1 3 12 3z" stroke="#38bdf8" stroke-width="1.6" />
+                <path d="M12 21c4 0 3.7-1.7 3.7-1.7V17h-3.8v-.6h5.6s3.5.3 3.5-4.2c0-4.5-3-4.3-3-4.3h-1.8v2.1s.1 2.5-2.4 2.5H9.6s-2.3 0-2.3 2.2v3.9S6.9 21 12 21z" stroke="#fbbf24" stroke-width="1.6" />
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>Python</h3>
+              <span class="skill-category-tag">Programming Language</span>
+            </div>
+          </article>
+
+          <!-- 4. Java -->
+          <article class="glass-card skill-card reveal" data-categories="programming">
+            <div class="skill-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 16h8a3 3 0 0 0 0-6H7v6z" stroke="#fb923c" stroke-width="1.75" />
+                <path d="M6 19h11" stroke="#38bdf8" stroke-width="1.75" stroke-linecap="round" />
+                <path d="M10 4c0 1.5 2 1.5 2 3M13.5 4c0 1.5 2 1.5 2 3" stroke="#fb923c" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>Java</h3>
+              <span class="skill-category-tag">Programming Language</span>
+            </div>
+          </article>
+
+          <!-- 5. Swift -->
+          <article class="glass-card skill-card reveal delay-1" data-categories="programming">
+            <div class="skill-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M19.5 15.5c.8-2.5.1-6.2-2.9-9.5 1.1 2.3 1.2 4.6.4 6.1-1.9-1.4-4.6-3.7-6.9-6.1.8 2.1 2.1 4.1 3.7 5.5-2.1-.9-4.5-2.5-6.3-4.3 1.2 2.4 3.4 4.8 6 6.2-2.5.5-5.4-.1-7.5-1.7 2.2 3.3 6.5 5.4 10.6 4.8 1.5-.2 2.8-.9 3.9-2-.4.7-.6 1-.9 1z" stroke="#f97316" stroke-width="1.6" fill="rgba(249,115,22,0.12)" />
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>Swift</h3>
+              <span class="skill-category-tag">Programming Language</span>
+            </div>
+          </article>
+
+          <!-- 6. JavaScript -->
+          <article class="glass-card skill-card reveal delay-2" data-categories="programming,web">
+            <div class="skill-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="#facc15" stroke-width="1.75" fill="rgba(250,204,21,0.1)" />
+                <path d="M11 11v5.2a1.8 1.8 0 0 1-3.2 1M14.5 16.5c.5.5 1.2.8 2 .8 1.1 0 1.8-.5 1.8-1.3 0-.8-.5-1.1-1.6-1.5-1-.4-1.7-.8-1.7-1.7 0-.9.8-1.5 1.8-1.5.8 0 1.4.2 1.8.6" stroke="#facc15" stroke-width="1.75" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>JavaScript</h3>
+              <span class="skill-category-tag">Programming &amp; Web</span>
+            </div>
+          </article>
+
+          <!-- 7. TypeScript -->
+          <article class="glass-card skill-card reveal" data-categories="programming,web">
+            <div class="skill-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="#38bdf8" stroke-width="1.75" fill="rgba(56,189,248,0.1)" />
+                <path d="M7.5 11.5h5M10 11.5v6M14.5 16.7c.5.5 1.2.8 2 .8 1.1 0 1.8-.5 1.8-1.3 0-.8-.5-1.1-1.6-1.5-1-.4-1.7-.8-1.7-1.7 0-.9.8-1.5 1.8-1.5.8 0 1.4.2 1.8.6" stroke="#38bdf8" stroke-width="1.75" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>TypeScript</h3>
+              <span class="skill-category-tag">Programming &amp; Web</span>
+            </div>
+          </article>
+
+          <!-- 8. HTML -->
+          <article class="glass-card skill-card reveal delay-1" data-categories="web">
+            <div class="skill-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 3l1.5 15L12 21l6.5-3L20 3H4z" stroke="#fb7185" stroke-width="1.75" fill="rgba(251,113,133,0.1)" />
+                <path d="M8 8h8l-.5 4.5H9.5l.3 2.5 2.2.7 2.2-.7.2-1.5" stroke="#f8fafc" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>HTML</h3>
+              <span class="skill-category-tag">Web Technology</span>
+            </div>
+          </article>
+
+          <!-- 9. CSS -->
+          <article class="glass-card skill-card reveal delay-2" data-categories="web">
+            <div class="skill-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 3l1.5 15L12 21l6.5-3L20 3H4z" stroke="#818cf8" stroke-width="1.75" fill="rgba(129,140,248,0.1)" />
+                <path d="M8 8h8l-.4 4H9l.3 2.8 2.7.8 2.7-.8.3-2.8" stroke="#f8fafc" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>CSS</h3>
+              <span class="skill-category-tag">Web Technology</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. PROJECTS SECTION (USING REAL PROJECTS FROM THIS REPOSITORY)
+         ====================================================================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">03 // Featured Work</span>
+          <h2 class="section-title">Project <span class="text-gradient">Showcase</span></h2>
+          <p class="section-subtitle">
+            Real software and web projects from my repository, plus an open slot for upcoming academic builds.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1: StudyForge AI (Real Project from Repository) -->
+          <article class="glass-card project-card reveal">
+            <div class="project-preview">
+              <svg class="project-preview-svg" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+                <rect x="24" y="20" width="352" height="160" rx="10" fill="#0b1021" stroke="rgba(56,189,248,0.4)" />
+                <circle cx="44" cy="38" r="4" fill="#ef4444" />
+                <circle cx="58" cy="38" r="4" fill="#f59e0b" />
+                <circle cx="72" cy="38" r="4" fill="#10b981" />
+                <text x="92" y="42" fill="#94a3b8" font-family="monospace" font-size="10">StudyForge AI — Learning Workspace</text>
+                <!-- Left panel: Document hub -->
+                <rect x="40" y="56" width="105" height="106" rx="6" fill="rgba(56,189,248,0.08)" stroke="rgba(56,189,248,0.25)" />
+                <rect x="50" y="68" width="65" height="8" rx="4" fill="#38bdf8" />
+                <rect x="50" y="84" width="82" height="6" rx="3" fill="rgba(148,163,184,0.35)" />
+                <rect x="50" y="96" width="74" height="6" rx="3" fill="rgba(148,163,184,0.25)" />
+                <rect x="50" y="132" width="84" height="18" rx="4" fill="rgba(52,211,153,0.22)" />
+                <!-- Right panel: Study guide, Quiz & Flashcards -->
+                <rect x="158" y="56" width="202" height="48" rx="6" fill="rgba(129,140,248,0.1)" stroke="rgba(129,140,248,0.28)" />
+                <rect x="170" y="68" width="110" height="8" rx="4" fill="#818cf8" />
+                <rect x="170" y="82" width="165" height="6" rx="3" fill="rgba(148,163,184,0.3)" />
+                <rect x="158" y="114" width="96" height="48" rx="6" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.28)" />
+                <rect x="264" y="114" width="96" height="48" rx="6" fill="rgba(56,189,248,0.08)" stroke="rgba(56,189,248,0.25)" />
+              </svg>
+              <div class="project-badge-overlay">
+                <span class="verified-tag">Featured Project</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">StudyForge AI</h3>
+              <p class="project-desc">
+                An AI-powered educational workspace that transforms static study materials (PDFs, PowerPoint slides, images, and notes) into comprehensive study guides, active-recall quizzes, 3D flashcards, a grounded Socratic AI tutor, and Feynman/ELI5 explanations.
+              </p>
+
+              <ul class="tech-tags" aria-label="Technologies used in StudyForge AI">
+                <li class="tech-tag">Python</li>
+                <li class="tech-tag">FastAPI</li>
+                <li class="tech-tag">JavaScript</li>
+                <li class="tech-tag">TypeScript</li>
+                <li class="tech-tag">HTML</li>
+                <li class="tech-tag">CSS</li>
+              </ul>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/ajaygs5/StudyForge-AI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary btn-sm"
+                >
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Personal Developer Portfolio (This Website in Repository) -->
+          <article class="glass-card project-card reveal delay-1">
+            <div class="project-preview">
+              <svg class="project-preview-svg" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+                <rect x="24" y="20" width="352" height="160" rx="10" fill="#0b1021" stroke="rgba(129,140,248,0.38)" />
+                <circle cx="85" cy="75" r="3" fill="#38bdf8" />
+                <circle cx="145" cy="55" r="3" fill="#818cf8" />
+                <circle cx="215" cy="85" r="3" fill="#34d399" />
+                <circle cx="295" cy="60" r="3" fill="#38bdf8" />
+                <line x1="85" y1="75" x2="145" y2="55" stroke="rgba(56,189,248,0.3)" stroke-width="1" />
+                <line x1="145" y1="55" x2="215" y2="85" stroke="rgba(129,140,248,0.3)" stroke-width="1" />
+                <line x1="215" y1="85" x2="295" y2="60" stroke="rgba(52,211,153,0.3)" stroke-width="1" />
+                <rect x="44" y="102" width="150" height="54" rx="8" fill="rgba(15,23,42,0.9)" stroke="rgba(56,189,248,0.32)" />
+                <rect x="208" y="102" width="148" height="54" rx="8" fill="rgba(15,23,42,0.9)" stroke="rgba(129,140,248,0.32)" />
+              </svg>
+              <div class="project-badge-overlay">
+                <span class="verified-tag">Web Project</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Developer Portfolio Website</h3>
+              <p class="project-desc">
+                Modular, responsive personal portfolio engineered without heavy external frameworks. Features a 60fps HTML5 Canvas constellation background, glassmorphic dark UI, category skill filtering, and keyboard accessibility.
+              </p>
+
+              <ul class="tech-tags" aria-label="Technologies used in Developer Portfolio">
+                <li class="tech-tag">HTML</li>
+                <li class="tech-tag">CSS</li>
+                <li class="tech-tag">JavaScript</li>
+              </ul>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/ajaygs5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary btn-sm"
+                >
+                  <span>GitHub Profile</span>
+                </a>
+                <a href="#hero" class="btn btn-ghost btn-sm">
+                  <span>Live View</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3: Placeholder for Upcoming Project -->
+          <article class="glass-card project-card reveal delay-2">
+            <div class="project-preview">
+              <svg class="project-preview-svg" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+                <rect x="24" y="20" width="352" height="160" rx="10" fill="#0b1021" stroke="rgba(251,191,36,0.28)" stroke-dasharray="6 4" />
+                <rect x="52" y="52" width="130" height="96" rx="8" fill="rgba(56,189,248,0.06)" stroke="rgba(56,189,248,0.2)" />
+                <rect x="202" y="52" width="146" height="42" rx="8" fill="rgba(129,140,248,0.06)" stroke="rgba(129,140,248,0.2)" />
+                <rect x="202" y="106" width="146" height="42" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" />
+              </svg>
+              <div class="project-badge-overlay">
+                <span class="placeholder-tag">Upcoming Project Slot</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">[Next Project — Placeholder]</h3>
+              <p class="project-desc">
+                Reserved for your next C, C++, Java, Swift, or Python build. Add the project title, overview, tech tags, and repository link here when ready.
+              </p>
+
+              <ul class="tech-tags" aria-label="Example technologies">
+                <li class="tech-tag">C++</li>
+                <li class="tech-tag">Java</li>
+                <li class="tech-tag">Swift</li>
+              </ul>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/ajaygs5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-ghost btn-sm"
+                >
+                  <span>GitHub (@ajaygs5)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. EDUCATION SECTION
+         ====================================================================== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">04 // Academic Background</span>
+          <h2 class="section-title">Formal <span class="text-gradient">Education</span></h2>
+          <p class="section-subtitle">
+            My undergraduate degree program in Computer Applications.
+          </p>
+        </div>
+
+        <div class="cards-grid-2">
+          <article class="glass-card timeline-card reveal">
+            <div class="card-top-row">
+              <div class="card-icon-badge" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg>
+              </div>
+              <span class="verified-tag">Current Program &bull; Class of 2029</span>
+            </div>
+
+            <h3 class="timeline-title">BCA – Computer Applications</h3>
+            <p class="timeline-org">
+              <strong data-config-text="college">SRM Institute of Science and Technology</strong>
+            </p>
+            <p class="timeline-meta">
+              Location: <span data-config-text="location">Chennai, Tamil Nadu</span> &bull;
+              Expected Graduation: <span data-config-text="graduationYear">2029</span>
+            </p>
+            <p>
+              Pursuing undergraduate studies in Computer Applications with a focus on structured and object-oriented programming, data structures, software engineering fundamentals, and modern web technologies.
+            </p>
+          </article>
+
+          <article class="glass-card timeline-card reveal delay-1">
+            <div class="card-top-row">
+              <div class="card-icon-badge" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                </svg>
+              </div>
+              <span class="placeholder-tag">Optional Slot</span>
+            </div>
+
+            <h3 class="timeline-title">[Prior Education / Coursework — Placeholder]</h3>
+            <p class="timeline-org">Institution: [School / Higher Secondary Placeholder]</p>
+            <p class="timeline-meta">Completion Year: [Year Placeholder]</p>
+            <p>
+              Optional placeholder card reserved in case you would like to list higher secondary education or specialized university coursework later.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. EXPERIENCE / ACHIEVEMENTS SECTION (PLACEHOLDERS ONLY)
+         ====================================================================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">05 // Milestones</span>
+          <h2 class="section-title">Experience &amp; <span class="text-gradient">Achievements</span></h2>
+          <p class="section-subtitle">
+            Dedicated section structure for internships, hackathons, coding competitions, and academic milestones.
+          </p>
+        </div>
+
+        <div class="cards-grid-2">
+          <!-- Experience Placeholder -->
+          <article class="glass-card timeline-card reveal">
+            <div class="card-top-row">
+              <div class="card-icon-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              </div>
+              <span class="placeholder-tag">Experience Placeholder</span>
+            </div>
+
+            <h3 class="timeline-title">[Internship / Campus Role / Open-Source Contribution]</h3>
+            <p class="timeline-org">[Organization / Technical Club — Placeholder]</p>
+            <p class="timeline-meta">[Timeline / Duration — Placeholder]</p>
+            <p>
+              Kept as a clean placeholder until you provide real internship, technical club, or work experience details.
+            </p>
+          </article>
+
+          <!-- Achievements Placeholder -->
+          <article class="glass-card timeline-card reveal delay-1">
+            <div class="card-top-row">
+              <div class="card-icon-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <span class="placeholder-tag">Achievement Placeholder</span>
+            </div>
+
+            <h3 class="timeline-title">[Hackathon / Academic / Coding Achievement]</h3>
+            <p class="timeline-org">[Event or Institution — Placeholder]</p>
+            <p class="timeline-meta">[Year / Date — Placeholder]</p>
+            <p>
+              Kept as a clean placeholder until you provide real hackathon, coding competition, or academic achievement details.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. CERTIFICATIONS SECTION (PLACEHOLDERS ONLY)
+         ====================================================================== -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">06 // Credentials</span>
+          <h2 class="section-title">Courses &amp; <span class="text-gradient">Certifications</span></h2>
+          <p class="section-subtitle">
+            Verified certificates and technical coursework will be listed here once provided.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <article class="glass-card cert-card reveal">
+            <div class="card-top-row">
+              <span class="placeholder-tag">Certificate Placeholder 01</span>
+            </div>
+            <h3 class="timeline-title">[Certificate Name — Placeholder]</h3>
+            <p class="timeline-org">Issuer: [Issuing Platform / University]</p>
+            <p class="timeline-meta">Issued: [Month Year — Placeholder]</p>
+            <p>Ready to display your verified certificate details and credential link.</p>
+          </article>
+
+          <article class="glass-card cert-card reveal delay-1">
+            <div class="card-top-row">
+              <span class="placeholder-tag">Certificate Placeholder 02</span>
+            </div>
+            <h3 class="timeline-title">[Certificate Name — Placeholder]</h3>
+            <p class="timeline-org">Issuer: [Issuing Platform / University]</p>
+            <p class="timeline-meta">Issued: [Month Year — Placeholder]</p>
+            <p>Ready to display your verified certificate details and credential link.</p>
+          </article>
+
+          <article class="glass-card cert-card reveal delay-2">
+            <div class="card-top-row">
+              <span class="placeholder-tag">Certificate Placeholder 03</span>
+            </div>
+            <h3 class="timeline-title">[Certificate Name — Placeholder]</h3>
+            <p class="timeline-org">Issuer: [Issuing Platform / University]</p>
+            <p class="timeline-meta">Issued: [Month Year — Placeholder]</p>
+            <p>Ready to display your verified certificate details and credential link.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. RESUME SECTION
+         ====================================================================== -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="glass-card resume-banner reveal">
+          <div>
+            <span class="section-eyebrow">07 // Curriculum Vitae</span>
+            <h2 class="section-title" style="margin-bottom: 0.5rem;">
+              Grab a Copy of My <span class="text-gradient">Resume</span>
+            </h2>
+            <p style="max-width: 620px;">
+              Download a concise summary of my education at SRM IST, programming skills, and projects.
+              <span class="placeholder-tag" style="margin-left: 0.35rem;">Placeholder PDF — Final PDF Coming Soon</span>
+            </p>
+          </div>
+
+          <div>
+            <a
+              href="assets/Ajay_Kumar_Resume_Placeholder.pdf"
+              data-config-href="resumePath"
+              download="Ajay_Kumar_Resume.pdf"
+              class="btn btn-primary"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>Download Resume (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. CONTACT SECTION
+         ====================================================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">08 // Get In Touch</span>
+          <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+          <p class="section-subtitle">
+            Based in Chennai, Tamil Nadu. Whether you are a recruiter, internship coordinator, faculty member, or fellow developer, feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Direct Contact Channels -->
+          <div class="contact-info-stack reveal">
+            <!-- Email Card -->
+            <div class="glass-card contact-method-card">
+              <div class="contact-method-left">
+                <div class="card-icon-badge" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="contact-method-details">
+                  <h3>Email</h3>
+                  <p data-config-text="emailDisplay">gsajaykumar555@gmail.com</p>
+                </div>
+              </div>
+              <button
+                id="copy-email-btn"
+                type="button"
+                class="btn btn-secondary btn-sm"
+                aria-label="Copy email address to clipboard"
+              >
+                Copy
+              </button>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="glass-card contact-method-card">
+              <div class="contact-method-left">
+                <div class="card-icon-badge" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z" />
+                  </svg>
+                </div>
+                <div class="contact-method-details">
+                  <h3>LinkedIn</h3>
+                  <p data-config-text="linkedinDisplay">linkedin.com/in/ajaykumar-g-70822825b</p>
+                </div>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/ajaykumar-g-70822825b"
+                data-config-href="linkedinUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-ghost btn-sm"
+              >
+                Visit
+              </a>
+            </div>
+
+            <!-- GitHub Card -->
+            <div class="glass-card contact-method-card">
+              <div class="contact-method-left">
+                <div class="card-icon-badge" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z" />
+                  </svg>
+                </div>
+                <div class="contact-method-details">
+                  <h3>GitHub</h3>
+                  <p data-config-text="githubDisplay">github.com/ajaygs5</p>
+                </div>
+              </div>
+              <a
+                href="https://github.com/ajaygs5"
+                data-config-href="githubUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-ghost btn-sm"
+              >
+                Visit
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Optional Contact Form Structure -->
+          <div class="glass-card contact-form-card reveal delay-1">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.4rem;">Quick Message Draft</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 1.35rem;">
+              Fill out the fields below to open a pre-filled email to <strong>gsajaykumar555@gmail.com</strong> in your default mail app.
+            </p>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="sender-name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  id="sender-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="e.g., Priya Sharma"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  id="sender-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="e.g., priya@company.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="sender-subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  id="sender-subject"
+                  name="subject"
+                  class="form-input"
+                  placeholder="Internship Opportunity / Project Collaboration"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message" class="form-label">Message</label>
+                <textarea
+                  id="sender-message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Hi Ajay, I came across your developer portfolio..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Draft Email in Mail App</span>
+              </button>
+
+              <div class="form-notice">
+                <strong>Note:</strong> This static form uses a client-side <code>mailto:</code> link so it works with zero paid backend services. It will open your email client addressed to <code>gsajaykumar555@gmail.com</code>.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       10. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p style="color: var(--text-primary); font-weight: 600;">
+          &copy; <span id="current-year">2026</span> Ajay Kumar. All rights reserved.
+        </p>
+        <p style="font-size: 0.84rem; color: var(--text-muted);">
+          BCA – Computer Applications &bull; SRM Institute of Science and Technology, Chennai
+        </p>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+        <a
+          href="https://github.com/ajaygs5"
+          data-config-href="githubUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-ghost btn-sm"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ajaykumar-g-70822825b"
+          data-config-href="linkedinUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-ghost btn-sm"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="mailto:gsajaykumar555@gmail.com"
+          data-config-href="email"
+          class="btn btn-ghost btn-sm"
+        >
+          Email
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Accessible Toast Notification -->
+  <div
+    id="toast-notification"
+    class="toast-notification"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+  <!-- Modular JavaScript Files (Deferred so HTML parses first for fast performance) -->
+  <script defer src="js/data.js"></script>
+  <script defer src="js/background.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>

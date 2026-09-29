@@ -1,0 +1,63 @@
+/* ==========================================================================
+   1. DESIGN TOKENS & CSS VARIABLES (variables.css)
+   --------------------------------------------------------------------------
+   Why use CSS Variables?
+   Instead of repeating hex codes like #38bdf8 across hundreds of lines,
+   we store our colors, fonts, and spacing in :root variables. Changing a
+   variable here updates the entire website instantly.
+   ========================================================================== */
+
+:root {
+  /* --- Core Dark Theme Backgrounds --- */
+  --bg-primary: #060913;          /* Deepest obsidian background */
+  --bg-secondary: #0b1021;        /* Elevated section surface */
+  --bg-card: rgba(15, 23, 42, 0.62);        /* Glassmorphism card fill */
+  --bg-card-hover: rgba(22, 33, 58, 0.82);  /* Card fill on hover */
+  --bg-glass-nav: rgba(6, 9, 19, 0.78);     /* Sticky navbar glass fill */
+
+  /* --- Text Hierarchy (WCAG AA/AAA High Contrast) --- */
+  --text-primary: #f8fafc;        /* Crisp white-slate for headings & body */
+  --text-secondary: #94a3b8;      /* Muted slate for descriptions */
+  --text-muted: #64748b;          /* Subtle captions & metadata */
+
+  /* --- Developer Accent Palette --- */
+  --accent-cyan: #38bdf8;         /* Primary interactive accent (Sky Cyan) */
+  --accent-indigo: #818cf8;       /* Secondary gradient accent (Soft Indigo) */
+  --accent-emerald: #34d399;      /* Status / success / live badge accent */
+  --accent-amber: #fbbf24;        /* Placeholder / notice badge accent */
+
+  /* --- Gradients --- */
+  --gradient-primary: linear-gradient(135deg, #38bdf8 0%, #818cf8 55%, #c084fc 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(56, 189, 248, 0.14) 0%, rgba(129, 140, 248, 0.08) 100%);
+  --gradient-glow: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(56, 189, 248, 0.12), transparent 40%);
+
+  /* --- Borders & Dividers --- */
+  --border-subtle: rgba(148, 163, 184, 0.12);
+  --border-highlight: rgba(56, 189, 248, 0.42);
+  --border-placeholder: rgba(251, 191, 36, 0.35);
+
+  /* --- Typography --- */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, monospace;
+
+  /* --- Layout & Spacing --- */
+  --container-max: 1180px;
+  --container-padding: clamp(1.25rem, 4vw, 2.5rem);
+  --section-py: clamp(4.5rem, 8vw, 7rem);
+  --nav-height: 4.5rem;
+
+  /* --- Radii & Shadows --- */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-full: 9999px;
+
+  --shadow-card: 0 12px 32px -8px rgba(2, 6, 23, 0.65);
+  --shadow-glow: 0 0 28px -4px rgba(56, 189, 248, 0.28);
+
+  /* --- Transitions --- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 180ms var(--ease-out-expo);
+  --transition-base: 320ms var(--ease-out-expo);
+}
